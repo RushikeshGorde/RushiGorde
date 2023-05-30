@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Courier+Prime:ital@1&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--1.owl crusal min. css-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./photo/images.jpg" type="image/x-icon">
+  <!--2. owl carousel theme. css-->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="header">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+          <h2>CAR<span class="text-success">BOOK</span></h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="menu snip1168 navbar-nav ms-auto mb-3 mt-1">
+              <li class="menu_list">
+                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                <a href="#corosal" class="side">home</a>
+              </li>
+              <li class="menu_list">
+                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                <a href="#About" class="side">About</a>
+              </li>
+              <li class="menu_list">
+                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                <a href="#Service" class="side">Service</a>
+              </li>
+              <li class="menu_list">
+                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                <a href="#Cars" class="side">Cars</a>
+              </li>
+              <li class="menu_list">
+                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                <a href="#Blog" class="side">Block</a>
+              </li>
+              <li class="menu_list">
+                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                <a href="#projects" class="side">projects</a>
+              </li>
+              <li class="menu_list">
+                <i class="bi bi-heart-pulse text-primary fs-3"></i>
+                <a href="#Contact" class="side">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--End of header-->
+    <div class="row" id="corosal">
+      <div id="carouselExampleCaptions" class="carousel slide p-0">
+        <div class="carousel-indicators"></div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="photo/Temp01.jpg" class="d-block w-100" alt="Image Error" />
+            <div class="carousel-caption d-none d-md-block position-absolute top-50 start-25">
+              <div data-aos="fade-down">
+                <h2 class="display-1 fw-bold">
+                  Fast & Easy Way To rent a Car
+                </h2>
+                <p class="lead">
+                  A small river named Duden flows by their place and supplies
+                  it with the necessary regelialia. It is a paradisematic
+                  country, in which roasted parts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of crousal-->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <form class="row g-3 bg-primary text-white">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+              <h3>Make your trip</h3>
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">PICK-UP-LOCATION</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="city,Airport,Station,ect." />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">DROP-UP-LOCATION</label>
+              <input type="text" class="form-control" id="inputAddres" placeholder="city,Airport,Station,ect." />
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">PICK-UP-DATE</label>
+              <input type="date" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">DROP-UP-DATE</label>
+              <input type="date" class="form-control" id="inputPassword4" />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">PICK-UP-LOCATION</label>
+              <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+            </div>
+            <div class="col-12">
+              <button type="button" class="glow-on-hover btn btn-secondary btn-lg mb-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Rent a car
+              </button>
+            </div>
+          </form>
+          <!--end of form-->
+          <!-- Button trigger modal -->
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content bg-success text-light">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Form submitted Successfully
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Thank you For Submtting</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+            Block
+          </div>
+        </div>
+        <div class="col-sm-8 my-5 ">
+          <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <h2 class="mt-5 mb-5">Better Way to Rent Your Perfect Cars</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm">
+              <img class="rounded-circle h-50" src="photo/end.png" alt="" />
+              <p class="fs-4">Choose Your Pickup Location</p>
+            </div>
+            <div class="col-sm">
+              <img class="rounded-circle h-50" src="photo/fri.png" alt="" />
+              <p class="fs-4">Select the Best Deal</p>
+            </div>
+            <div class="col-sm">
+              <img class="rounded-circle h-50" src="photo/car05.jpg " alt="" />
+              <p class="fs-4">Reserve Your Rental Car</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <button type="button" class="glow-on-hover btn btn-primary btn-lg">
+              Reserve Your Perfect Car
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-5" id="projects">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm">
+            <div class="owl-carousel owl-theme">
+              <div class="card-group">
+                <div class="card">
+                  <img src="photo/Temp02.jpg" class="card-img-top h-100" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title mt-4">Mercedes Grand Sedan</h5>
+                    <div class="d-flex justify-content-between">
+                      <p><small>cheverolet</small></p>
+                      <p class="text-primary">
+                        $500<samp class="text-secondary">/day</samp>
+                      </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="glow-on-hover btn btn-primary btn-sm">Book Now</a>
+                      <a href="#" class="glow-on-hover btn btn-success btn-sm">Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mx-3">
+                <img src="photo/Temp03.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Mercedes Grand Sedan</h5>
+                  <div class="d-flex justify-content-between">
+                    <p><small>cheverolet</small></p>
+                    <p class="text-primary">
+                      $500<samp class="text-secondary">/day</samp>
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="glow-on-hover btn btn-primary btn-sm">Book Now</a>
+                    <a href="#" class="glow-on-hover btn btn-success btn-sm">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="photo/Temp13.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Mercedes Grand Sedan</h5>
+                  <div class="d-flex justify-content-between">
+                    <p><small>cheverolet</small></p>
+                    <p class="text-primary">
+                      $500<samp class="text-secondary">/day</samp>
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="glow-on-hover btn btn-primary btn-sm">Book Now</a>
+                    <a href="#" class="glow-on-hover btn btn-success btn-sm">Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card mx-3">
+                <img src="photo/Temp05.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Mercedes Grand Sedan</h5>
+                  <div class="d-flex justify-content-between">
+                    <p><small>cheverolet</small></p>
+                    <p class="text-primary">
+                      $500<samp class="text-secondary">/day</samp>
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="glow-on-hover btn btn-primary btn-sm">Book Now</a>
+                    <a href="#" class="glow-on-hover btn btn-success btn-sm">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-5" id="About">
+      <div class="row">
+        <div class="col-sm-5 mt-4">
+          <img src="photo/Temp07.jpg" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-sm-7 bg-success text-light">
+          <small>About us</small>
+          <h2>Welcome to Carbook</h2>
+          <p>
+            A small river named Duden flows by their place and supplies it
+            with the necessary regelialia. It is a paradisematic country, in
+            which roasted parts of sentences fly into your mouth. <br />
+
+            On her way she met a copy. The copy warned the Little Blind Text,
+            that where it came from it would have been rewritten a thousand
+            times and everything that was left from its origin would be the
+            word "and" and the Little Blind Text should turn around and return
+            to its own, safe country. A small river named Duden flows by their
+            place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly
+            into your mouth.
+          </p>
+          <button type="button" class="glow-on-hover btn btn-outline-primary btn-lg mb-3">
+            Search Veacial
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5" id="Service">
+      <div class="row">
+        <p class="text-primary">SERVICES</p>
+        <div data-aos="flip-left">
+          <h2 class="display-5 fw-bold mt-5 mb-5">Our Latest Services</h2>
+        </div>
+        <div class="col-sm ">
+          <img class="rounded-circle h-25" src="photo/car05.jpg" alt="" />
+          <h5>Wedding Ceremony</h5>
+          <p>
+            A small river named Duden flows by their place and supplies it
+            with the necessary regelialia.
+          </p>
+        </div>
+        <div class="col-sm">
+          <img class="rounded-circle h-25" src="photo/end.png" alt="" />
+          <h5>City Transfer</h5>
+          <p>
+            A small river named Duden flows by their place and supplies it
+            with the necessary regelialia.
+          </p>
+        </div>
+        <div class="col-sm">
+          <img class="rounded-circle h-25" src="photo/car05.jpg" alt="" />
+          <h5>Airport Transfer</h5>
+          <p>
+            A small river named Duden flows by their place and supplies it
+            with the necessary regelialia.
+          </p>
+        </div>
+        <div class="col-sm">
+          <img class="rounded-circle h-25" src="photo/end.png" alt="" />
+          <h5>Whole City Tour</h5>
+          <p>
+            A small river named Duden flows by their place and supplies it
+            with the necessary regelialia.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center" id="Blog">
+      <p class="text-primary text-center">TESTIMONAL</p>
+      <div data-aos="flip-left">
+        <h2 class="text-center mb-5 display-5 fw-bold">Happy Clints</h2>
+      </div>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="testimotionals">
+                <div class="card mb-5">
+                  <div class="layer"></div>
+                  <div class="content">
+                    <p>
+                      Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts.
+                    </p>
+                    <div class="image">
+                      <img width="100px" src="photo/Temp08.jpg" alt="image Error" />
+                    </div>
+                    <div class="details">
+                      <h2 class="text-light">
+                        Roger Scott <br />
+                        <span>Web Developer</span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="testimotionals">
+                <div class="card mb-5">
+                  <div class="layer"></div>
+                  <div class="content">
+                    <p>
+                      Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts.
+                    </p>
+                    <div class="image">
+                      <img width="100px" src="photo/Temp09.jpg" alt="image Error" />
+                    </div>
+                    <div class="details">
+                      <h2 class="text-light">
+                        Roger Scott <br />
+                        <span>UI Designer</span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="testimotionals">
+                <div class="card mb-5">
+                  <div class="layer"></div>
+                  <div class="content">
+                    <p>
+                      Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts.
+                    </p>
+                    <div class="image">
+                      <img width="100px" src="photo/Temp10.jpg" alt="image Error" />
+                    </div>
+                    <div class="details">
+                      <h2 class="text-light">
+                        Roger Scott <br />
+                        <span>Marketing Manager</span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of clint-->
+    <div class="container text-center mt-5" id="Cars">
+      <div data-aos="flip-left">
+        <h2 class="text-center mb-5 display-5 fw-bold">
+          CAR<span class="text-success">BOOK</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="card-group group-flush">
+            <div class="card mx-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+              <img src="photo/Temp11.jpg" class="card-img-top h-100" alt="..." />
+              <div class="card-body border border-0">
+                <a href="#" class="text-decoration-none">oct.29.2019</a>
+                <a href="#" class="text-decoration-none">Admin</a>
+                <a href="#"><i class="bi bi-chat-left-text-fill"></i></a>
+                <a href="#">3</a> <br />
+                <b class="fs-5">Why Lead Genration is key for Bussines Growth</b>
+                <br />
+                <button class="glow-on-hover btn btn-primary" type="submit">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="card mx-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+              <img src="photo/Temp12.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <a href="#" class="text-decoration-none">oct.29.2019</a>
+                <a href="#" class="text-decoration-none">Admin</a>
+                <a href="#"><i class="bi bi-chat-left-text-fill"></i></a>
+                <a href="#">3</a> <br />
+                <b class="fs-5">Why Lead Genration is key for Bussines Growth</b>
+                <br />
+                <button class="glow-on-hover btn btn-primary" type="submit">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="card mx-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+              <img src="photo/Temp13.jpg" class="card-img-top h-100" alt="..." />
+              <div class="card-body">
+                <a href="#" class="text-decoration-none">oct.29.2019</a>
+                <a href="#" class="text-decoration-none">Admin</a>
+                <a href="#"><i class="bi bi-chat-left-text-fill"></i></a>
+                <a href="#">3</a> <br />
+                <b class="fs-5">Why Lead Genration is key for Bussines Growth</b>
+                <br />
+                <button class="glow-on-hover btn btn-primary" type="submit">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="col-sm">
+          <div class="align-items-center">
+            <b>60</b>
+            <p>Year</p>
+            <p>Experienced</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="align-items-center">
+            <b>1,090</b>
+            <p>Total</p>
+            <p>Cars</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="align-items-center">
+            <b>2,090</b>
+            <p>Happy</p>
+            <p>Customers</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="align-items-center">
+            <b>67</b>
+            <p>Total</p>
+            <p>Branches</p>
+          </div>
+        </div>
+        
+      
+        
+      </div>
+    </div>
+
+
+    <div class="row mt-5 bg-dark text-light pt-5" id="Contact">
+      <div class="col-sm">
+        <h3>CAR<span class="text-success">BOOK</span></h3>
+        <p class="lh-lg">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <a class="text-light" href="#"> <i class="bi bi-twitter"></i></a>
+        <a class="text-light" href="#"> <i class="bi bi-facebook m-5"></i></a>
+        <a class="text-light" href="#"> <i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="col-sm">
+        <h3>Information</h3>
+        <a href="#" class="text-decoration-none text-light">About</a> <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">Services</a>
+        <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">Term and Condition</a>
+        <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">Best Price Guaranatee</a>
+        <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">Privicy and cokiee Privacy</a>
+        <br />
+        <br />
+      </div>
+      <div class="col-sm">
+        <h3>Customer Support</h3>
+        <a href="#" class="text-decoration-none text-light">FAQs</a> <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">Payment Option</a>
+        <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">Booking Tips</a>
+        <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">How It Works</a>
+        <br />
+        <br />
+        <a href="#" class="text-decoration-none text-light">Contact Us</a>
+        <br />
+        <br />
+      </div>
+      <div class="col-sm">
+        <h3>Have a Questions?</h3>
+
+
+
+
+        <div class="d-flex">
+
+          <i class="bi bi-geo-alt fw-bold fs-3"></i> <span class="ms-3"> 203 Fake St. Mountain View, San Francisco,
+            California, USA <br />
+            <br />
+          </span>
+        </div>
+        <div class="d-flex">
+
+          <i class="bi bi-telephone-fill fw-bold fs-3"></i> <span class="ms-3">info@yourdomain.com</span>
+          <br />
+          <br />
+        </div> <br> <br>
+        <div class="d-flex">
+
+          <i class="bi bi-envelope fw-bold fs-3"></i> <span class="ms-3">0123456789</span>
+          <br />
+          <br />
+        </div>
+
+      </div>
+
+
+
+    <hr class="text-sceondary" />
+
+    <div class="col-sm mt-5 pb-5 text-center">
+      <p>
+        Copyright &copy;2022 All rights reserved | This template is made
+        with by <br />
+        <i class="bi bi-heart-pulse mx-3 fs-5 text-danger"></i>Rushi Gorde
+        <i class="bi bi-heart-pulse mx-3 fs-5 text-danger"></i><br />
+        <i class="bi bi-balloon-heart text-danger fs-1"></i>
+      </p>
+    </div>
+    <!-- </div> -->
+  </div>
+  <!-- </div> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="photo/Temp01.jpg"></script> -->
+  <script>
+    var nav = document.querySelector("nav");
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("bg-light", "shadow");
+      } else {
+        nav.classList.remove("bg-light", "shadow");
+      }
+    });
+  </script>
+
+  <!-- include cdn files-->
+  <!--0. jsquery cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--1.owl crowsal min .js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--Intt owl crosal-->
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      autoplay: true,
+      margin: 10,
+      // nav: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        992: {
+          items: 3,
+        },
+      },
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- <script>
+        var nav = document.querySelector('nav');
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-light', 'shadow');
+            } else {
+                nav.classList.remove('bg-light', 'shadow');
+            }
+        });
+
+
+    </script> -->
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,862 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contener {
+    width: 100%;
+}
+
+header {
+    color: white;
+    background: url(../photo/Frist\ 01.jpg) no-repeat;
+    background-size: cover;
+    background-position: 51% 100%;
+    height: 600px;
+    width: 100%;
+    position: unset;
+}
+
+.header2,
+.header3 {
+    display: none;
+}
+
+.icon {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon h1 {
+    font-family: 'Dancing Script', cursive;
+    margin-left: 34px;
+}
+
+.icon i {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.herosection div {
+    width: 90%;
+    position: absolute;
+    left: 10px;
+    top: 119px;
+    font-size: 13px;
+}
+
+.herosection h2 {
+    color: white;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.herosection input[type="button"] {
+    color: white;
+    background-color: orange;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 7px 30px;
+    border: none;
+
+}
+
+.herosection p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.menu1 {
+    align-items: center;
+    margin-left: 31px;
+}
+
+.menu1 .menu2 {
+    background-color: #0c0c0c;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 71px 22px 52px -14px;
+    border-radius: 15px;
+    padding: 42px 5px;
+}
+
+.menu1 .menu2 img {
+    border-radius: 100%;
+    height: 160px;
+    width: 160px;
+    border: 5px solid yellow;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu1 img:hover {
+    transform: scale(1.05);
+}
+
+.menu1 .menu2 button {
+    color: white;
+    background-color: orange;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.menu1 .menu2 h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+}
+
+.menu3 h3 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 50px 5px;
+}
+
+.menu3 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu3 ul li {
+
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px 25px;
+
+}
+
+.menu3 ul li:hover {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.order {
+    height: 3961px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.order .order1 {
+    height: 400px;
+    background-color: #0c0c0c;
+    margin: 20px 10px;
+    border-radius: 15px;
+    width: 96%;
+}
+
+.order .order1 img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-height: 145px;
+    border-radius: 15px 14px 0px 55px;
+    margin: 0px 0px;
+    padding: 4px 64px;
+    background-color: #dadce0;
+    transition: all ease-in 0.2s;
+}
+
+.order1 h2 {
+    color: white;
+}
+
+.order .order1 img:hover {
+    transform: scale(0.1deg);
+}
+
+.order .order1 p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order .order1 i {
+    border: 13px solid orange;
+    background-color: orange;
+    font-size: 10px;
+    border-radius: 100%;
+}
+
+.order .order1 p {
+    padding: 10px 20px;
+    color: #ffffff;
+    overflow: hidden;
+    text-align: start;
+}
+
+.order input[type="button"] {
+    padding: 15px 51px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    border: none;
+    margin: 44px auto;
+}
+
+.burger {
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.burger .burger1 h2 {
+    font-family: 'Dancing Script', cursive;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 45px;
+
+}
+
+.burger .burger1 img {
+    height: auto;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.burger .burger1 p {
+    margin: 15px 0px;
+    padding: 40px 10px;
+    font-size: 18px;
+}
+
+.burger .burger1 input[type="button"] {
+ padding: 15px 51px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    border: none;
+    margin: 21px 53px;
+}
+
+.foom .foom1 {
+    padding: 40px 5px;
+}
+
+.lalu h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#select {
+    padding: 10px 160px;
+}
+
+.foom input[type="text"] {
+    padding: 10px 70px;
+}
+
+.foom input[type="email"] {
+    padding: 10px 70px;
+}
+
+.foom input[type="date"] {
+    padding: 10px 95px;
+}
+
+#select {
+    padding: 12px 83px;
+}
+
+.foom button {
+ padding: 10px 45px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    border: none;
+    margin: 24px 49px;
+}
+
+
+
+.our img {
+    border: 5px solid orange;
+    vertical-align: middle;
+}
+
+.costmer h2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    /* font-weight: bold; */
+    margin: 20px 40px;
+}
+
+.costmer p {
+    background-color: black;
+    color: white;
+    padding: 55px 23px;
+}
+
+.costmer b {
+    font-size: 23px;
+    padding-top: 10px;
+}
+
+.costmer img {
+    height: 145px;
+    width: 145px;
+    border-radius: 100%;
+    margin: 5px 87px;
+
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #0c0c0c;
+}
+
+footer .footer1 {
+    padding: 70px 10px;
+}
+
+footer .footer1 h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+footer .footer1 p {
+    padding-top: 12px;
+    font-size: 17px;
+    color: #dbdbdb;
+}
+
+footer .sai {
+    padding: 20px 60px;
+    font-size: 27px;
+}
+
+footer .sai i {
+    border-radius: 100%;
+    background-color: #0c0c0c;
+}
+
+footer .sai1 {
+    padding: 14px 24px;
+}
+
+@media only screen and (min-width:421px) {
+    header {
+        position: unset;
+
+    }
+
+    .order .order1 {
+        width: 95%;
+        margin: 20px 21px;
+    }
+
+    .order .order1 img {
+        margin: 10px 0px;
+        padding: 0px 109px;
+    }
+
+    .menu3 ul li {
+        margin: 5px 36px;
+    }
+}
+
+@media only screen and (min-width:576px) {
+    header {
+        background-size: 182% 100%;
+        background-position: 52% 90%;
+    }
+
+    .menu1 .menu2 {
+        display: flex;
+        margin: 72px 22px 49px 00px;
+        padding: 26px 5px;
+        width: 93%;
+        position: relative;
+    }
+
+    .menu1 .menu2 button {
+        position: absolute;
+        top: 93px;
+        left: 197px;
+    }
+
+    .order {
+        height: 2484px;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .order input[type="button"] {
+        padding: 15px 51px;
+        background-color: #ffbe33;
+        color: #ffffff;
+        border-radius: 45px;
+        border: none;
+        margin: 483px -39px;
+    }
+
+
+    .order .order1 {
+        margin: 41px 22px;
+        width: 42%;
+    }
+
+
+
+    .order .order1 img {
+        height: 1213px;
+        width: 100%;
+        border-radius: 15px 14px 0px 55px;
+        margin: 0px;
+        padding: 0px 26px;
+    }
+
+    .burger .burger1 img {
+        width: 56%;
+        margin: 0px 14px 13px 113px;
+
+    }
+
+   
+    .costmer img {
+        margin: 5px 209px;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    header {
+
+        background-size: 183% 122%;
+        background-position: 51% 48%;
+        height: 660px;
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .icon i {
+        margin-right: 90px;
+    }
+
+    .herosection div {
+        width: 52%;
+        align-items: center;
+        top: 149px;
+        left: 20px;
+        padding: 0px 0px;
+        font-size: 18px;
+    }
+
+    .herosection h2 {
+        font-weight: lighter;
+        font-size: 57px;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .herosection input[type="button"] {
+        color: white;
+        border: none;
+        background-color: orange;
+        border-radius: 48px;
+        margin: 15px -1px;
+        padding: 16px 44px;
+
+    }
+
+    .menu1 {
+        width: 98%;
+        display: flex;
+        margin: 1px 6px;
+
+    }
+
+
+    .menu1 .menu2 {
+        display: inline-block;
+        margin: 12px 28px;
+        padding: 54px 10px;
+    }
+
+    .menu1 .menu2 button {
+        margin: 192px -82px
+    }
+
+    .menu3 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .order {
+        height: 2343px;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .order input[type="button"] {
+        padding: 15px 51px;
+        background-color: #ffbe33;
+        color: #ffffff;
+        border-radius: 45px;
+        border: none;
+        margin: 483px -39px;
+    }
+
+    .order .order1 {
+        margin: 21px 19px;
+        width: 45%;
+    }
+
+    .order .order1 img {
+        height: 1213px;
+        width: 100%;
+        border-radius: 15px 14px 0px 55px;
+        margin: 0px;
+        padding: 0px 26px;
+    }
+
+    .burger {
+        margin-top: 146px;
+
+    }
+
+    #select {
+        padding: 12px 83px;
+    }
+
+    .order .order1 input[type="button"] {
+        margin: 36px 297px;
+    }
+
+    .burger {
+        display: flex;
+
+    }
+
+    .burger .burger1 p {
+        width: 77%;
+    }
+
+    .burger .burger1 img {
+        margin: 116px 0px 112px -103px;
+        width: 164%;
+        height: 70%
+    }
+
+    .our2 {
+        display: flex;
+    }
+
+    .our {
+        width: 50%;
+    }
+
+    .foom {
+        display: flex;
+
+    }
+
+    .lalu h3 {
+        padding: 80px 14px;
+        font-size: 45px;
+    }
+
+    .foom input[type="text"] {
+        padding: 18px 94px;
+    }
+
+    .foom input[type="email"] {
+        padding: 19px 96px;
+    }
+
+    .foom input[type="date"] {
+        padding: 19px 122px;
+    }
+
+    #select {
+        padding: 23px 110px;
+    }
+
+    .foom .foom1 {
+        width: 50%;
+        padding: 10px 3px
+    }
+
+    .foom .map {
+        width: 43%;
+        padding: 1px 1px;
+    }
+
+    .map .rutu {
+        margin: -1px 6px;
+        padding: 12px 37px;
+        font-size: 17px;
+    }
+
+    .costmer p {
+        padding: 80px 23px;
+        font-size: 20px;
+    }
+
+    footer .footer1 {
+        display: flex;
+        justify-items: center;
+    }
+
+    footer .footer1 .foot {
+        width: 34%;
+
+    }
+
+    footer .footer1 .foot p {
+        font-size: 25px;
+    }
+
+    footer .sai {
+        padding: 13px 35px;
+        font-size: 30px;
+    }
+
+    .sai4 p {
+        /* margin: -32px 1px; */
+        padding: 31px 39px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .icon i {
+        display: none;
+    }
+
+    .header2,
+    .header3 {
+        display: block;
+    }
+
+    .header1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header2 ul {
+        display: flex;
+        margin-top: 25px;
+        width: 350px;
+        justify-content: space-between;
+    }
+
+    .header2 ul li {
+        list-style: none;
+    }
+
+    .header2 ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+    }
+
+    .header2 ul li a:hover {
+        color: yellow;
+    }
+
+    .header3 {
+        align-items: center;
+        margin-top: 25px;
+        color: white;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header3 input[type="button"] {
+        border: none;
+        background-color: orange;
+        border-radius: 48px;
+        padding: 10px 20px;
+
+    }
+
+    header {
+        color: white;
+        background-size: 152% 141%;
+        background-position: 39% 30%;
+        height: 660px;
+        width: 100%;
+        height: 790px;
+    }
+
+    .herosection div {
+        width: 53%;
+        position: absolute;
+        left: 25px;
+        top: 278px;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .menu1 {
+        display: flex;
+    }
+
+    .menu1 .menu2 {
+        display: flex;
+        margin: 72px 22px 49px 35px;
+        padding: 26px 5px;
+        width: 45%;
+        position: relative;
+    }
+
+    .menu1 .menu2 button {
+        margin: 10px 10px;
+    }
+
+    .menu3 ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 500px;
+        margin: 28px auto;
+        padding: 10px 10px;
+
+    }
+
+    .our {
+        width: 46%;
+    }
+
+    .our2 {
+        justify-content: space-evenly;
+
+
+    }
+
+    .order {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1442px;
+
+    }
+
+    .order .order1 {
+        width: 26%;
+        height: 458px;
+        margin: 13px 36px;
+    }
+
+    .order .order1 img {
+        max-height: 252px;
+        width: 100%;
+        padding: 13px 1px;
+    }
+
+    .order input[type="button"] {
+        margin: 24px 412px;
+    }
+
+    .burger .burger1 img {
+        height: 672px;
+        width: 335px;
+        padding: 59px 37px;
+        margin: 0px 0px 0px 100px;
+    }
+
+    .burger .burger1 h2 {
+        font-size: 70px;
+        margin: 10px 10px;
+        padding: 119px 35px;
+    }
+
+    .burger .burger1 p {
+        width: 555px;
+        margin: 19px 0px;
+        padding: 9px 31px;
+        font-size: 20px;
+    }
+
+    .foom {
+        margin: 5px 5px;
+    }
+
+    .foom input[type="text"] {
+        padding: 20px 164px;
+    }
+
+    .foom input[type="email"] {
+        padding: 22px 165px;
+    }
+
+    .foom input[type="date"] {
+        padding: 25px 190px;
+    }
+
+    #select {
+        padding: 23px 177px;
+    }
+
+    .foom button {
+        padding: 17px 58px;
+        margin: 13px 168px;
+    }
+
+    .foom .map {
+        margin: 25px 0px 10px 57px;
+
+    }
+
+    .map .rutu {
+        margin: 4px 78px;
+        padding: 2px 81px;
+        font-size: 17px;
+    }
+
+    .costmer p {
+        padding: 60px 23px;
+    }
+
+    .costmer img {
+        margin: 5px 149px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .order .order1 {
+        width: 28%;
+        height: 458px;
+        margin: 13px 31px;
+    }
+
+    .order input[type="button"] {
+        margin: 46px auto;
+    }
+
+    .burger .burger1 img {
+        margin: 0px 0px 0px 335px;
+    }
+}
+
+@media only screen and (min-width:1299px) {
+    /* .order .order1 {
+        width: 30%;
+        height: 458px;
+        margin: 10px 30px 10px 10px;
+    } */
+}
