@@ -212,6 +212,7 @@ input {
     left: 0;
     right: 0;
     text-align: center;
+   
 }
 
 .social_share {
@@ -614,7 +615,9 @@ input {
     /* color: var(--skin-color); */
     background-color: var(--skin-color);
 }
-
+.expericence{
+    margin-top: 30px;
+}
 /* work Section  */
 .work_container {
     grid-template-columns: repeat(3, 330px);
