@@ -618,6 +618,9 @@ input {
 .expericence{
     margin-top: 30px;
 }
+
+.sk-img {
+height: 20px;}
 /* work Section  */
 .work_container {
     grid-template-columns: repeat(3, 330px);
