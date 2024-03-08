@@ -47,6 +47,86 @@
     --z-fixed: 10;
     --z-modal: 100;
 }
+.cursor {
+    width: 20px;
+    height: 20px;
+  border: 8px solid hsl(192, 100%, 50%);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 0.5s infinite alternate;
+    pointer-events: none;
+  }
+  
+  .cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+   border: 8px solid hsl(192, 100%, 50%);
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 0.5s infinite alternate;
+  }
+  
+  @keyframes cursorAnim {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.7);
+    }
+  }
+  
+  @keyframes cursorAnim2 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.4);
+    }
+  }
+  
+  @keyframes cursorAnim3 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(3);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
+  .expand {
+    animation: cursorAnim3 0.5s forwards;
+    border: 1px solid red;
+  }
+  
+  p {
+    color: white;
+    font-family: "arial";
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.4em;
+  }
+  .cursor::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+   border: 8px solid hsl(192, 100%, 50%);
+    border-radius: 50%;
+    opacity: 0.5;
+    top: 2px;
+    left: 2px;
+    animation: cursorAnim2 0.5s infinite alternate;
+  }
 
 /* Responsive typography */
 @media screen and (max-width:1024) {
@@ -61,6 +141,89 @@
         --smaller-font-size: .753rem;
 
     }
+    .cursor {
+        width: 20px;
+        height: 20px;
+       border: 8px solid hsl(192, 100%, 50%);
+        
+        
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+      
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+      
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid red;
+      }
+      
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      .cursor::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: 2px;
+        left: 2px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
 }
 
 /* BASE */
@@ -68,6 +231,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 
 html {
@@ -79,11 +243,19 @@ button,
 input {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+    margin: 0;
+    height: 100vh;
+    cursor: none;
+    background: rgb(27, 27, 27);
 }
 
 body {
     background-color: var(--body-color);
     color: var(--text-color);
+    margin: 0;
+    height: 100vh;
+    cursor: none;
+    background: rgb(27, 27, 27);
 }
 
 h1,
@@ -843,6 +1015,86 @@ height: 20px;}
         margin-left: var(--mb-2-5);
         margin-right: var(--mb-2-5);
     }
+    .cursor {
+        width: 20px;
+        height: 20px;
+      border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+      
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+      
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid red;
+      }
+      
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      .cursor::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: 2px;
+        left: 2px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
 
 }
 
@@ -859,6 +1111,86 @@ height: 20px;}
         grid-template-columns: repeat(2, 330px);
         gap: 2.5rem;
     }
+    .cursor {
+        width: 20px;
+        height: 20px;
+      border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+      
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+      
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid red;
+      }
+      
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      .cursor::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: 2px;
+        left: 2px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
 }
 
 @media screen and (max-width: 1024px) {
@@ -977,6 +1309,86 @@ height: 20px;}
     .details_title {
         margin-bottom: var(--mb-0-75);
     }
+    .cursor {
+        width: 20px;
+        height: 20px;
+      border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+      
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+      
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid red;
+      }
+      
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      .cursor::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: 2px;
+        left: 2px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
 }
 
 @media screen and (max-width: 768px) {
@@ -1033,6 +1445,86 @@ height: 20px;}
     .portfolio-close {
         top: .5rem;
     }
+    .cursor {
+        width: 20px;
+        height: 20px;
+      border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+      
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+      
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid red;
+      }
+      
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      .cursor::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: 2px;
+        left: 2px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
 }
 
 @media only screen and (max-width:576px) {
@@ -1091,6 +1583,86 @@ height: 20px;}
     .work_container {
         grid-template-columns: 300px;
     }
+    .cursor {
+        width: 20px;
+        height: 20px;
+      border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+      
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+      
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid red;
+      }
+      
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      .cursor::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: 2px;
+        left: 2px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
 
 }
 
@@ -1127,5 +1699,85 @@ height: 20px;}
         column-gap: .25rem;
     }
 
+    .cursor {
+        width: 20px;
+        height: 20px;
+      border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+      
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+      
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid red;
+      }
+      
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      .cursor::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+       border: 8px solid hsl(192, 100%, 50%);
+        border-radius: 50%;
+        opacity: 0.5;
+        top: 2px;
+        left: 2px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
 
 } 
