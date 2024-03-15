@@ -744,7 +744,6 @@ input {
     margin-left: auto;
 }
 
-
 .skills_active .skills_arrow {
     transform: rotate(-90deg);
     transition: .3s;
